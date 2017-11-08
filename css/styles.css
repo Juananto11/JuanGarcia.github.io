@@ -75,17 +75,18 @@ h4{
 	position: fixed;
 	z-index: 10;
 	box-shadow: 0 2px 10px rgba(0,0,0,.9);
+	padding: 0 5vw;
 }
 .menu h1{
-	padding-left: 5%;
 	font-size: 3em;
 	transition: .3s all ease;
+	margin: 10px;
 }
 .menu h1 a{
 	display: block;
 }
 .menu ul{
-	padding-right: 10%;
+	padding: 0;
 	display: flex;
 }
 .menu li{
@@ -401,6 +402,19 @@ footer{
 	}
 }
 @media screen and (max-width: 720px){
+	.menu ul{
+		display: none;
+	}
+	nav:after{
+		content: "";
+		display: block;
+		width: 5px;
+		height: 5px;
+		background: white;
+		border-radius: 50%;
+		box-shadow: 0 12px 0 white,
+					0 -12px 0 white;
+	}
 	.cabecera img{
 		width: 200px;
 		height: 200px;
@@ -416,38 +430,46 @@ footer{
 	.pie-pagina{
 		flex-direction: column;
 	}
+	.pie-pagina{
+		padding: 0;
+	}
 	.pie-pagina div{
 		width: 90%;
 		margin: auto;
 	}
 	.redes ul{
 		flex-wrap: nowrap;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 	.redes li{
 		margin: 0;
 	}
 }
 @media screen and (max-width: 500px){
+	h4{
+		font-size: 2em;
+	}
 	.portafolio-imagenes a{
-		width: 80vw;
-		height: 80vw;
+		width: 60vw;
+		height: 60vw;
 	}
 	.portafolio-imagenes div{
-		width: 80vw;
-		height: 80vw;
+		width: 60vw;
+		height: 60vw;
 	}
 	.portafolio-imagenes div::before{
-		width: 80vw;
-		height: 80vw;
+		width: 60vw;
+		height: 60vw;
 	}
-	.portafolio-imagenes a{
-		width: 80vw;
-		height: 80vw;
-	}
-	span{
+	.oculto{
 		display: none;
 	}
+	.bajar{
+		display: block;
+	}
 }
-@media screen and (max-width: 360px){{
+@media screen and (max-width: 320px){
+	.redes ul{
+		padding: 0;
+	}
 }
