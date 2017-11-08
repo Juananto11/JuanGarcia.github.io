@@ -21,7 +21,6 @@ body{
 }
 header{
 	background: #18BC9C;
-	height: 800px;
 }
 a{
 	text-decoration: none;
@@ -115,6 +114,8 @@ h4{
 }
 .cabecera h2, h3{
 	color: white;
+	text-align: center;
+	line-height: 1.5em;
 }
 .cabecera h2{
 	font-size: 5em;
@@ -122,7 +123,7 @@ h4{
 }
 .cabecera h3{
 	font-size: 2em;
-	margin: 40px;
+	margin: 40px 0 70px 0;
 }
 main{
 	width: 100%;
@@ -359,8 +360,94 @@ footer{
 	padding: 30px;
 }
 
-@media screen and (max-width: 820px) {
-	.redes li{
-		margin: 8%;
+@media screen and (max-width: 820px){
+	.menu h1{
+		font-size: 2em;
 	}
+	.portafolio-imagenes a{
+		width: 40vw;
+		height: 40vw;
+	}
+	.portafolio-imagenes div{
+		width: 40vw;
+		height: 40vw;
+	}
+	.portafolio-imagenes div::before{
+		width: 40vw;
+		height: 40vw;
+	}
+	.portafolio-imagenes a{
+		width: 40vw;
+		height: 40vw;
+	}
+	.acerca div{
+		flex-direction: column;
+	}
+	.acerca p{
+		width: 90%;
+		margin: 10px auto;
+	}
+	.acerca p:nth-child(1){
+		text-align: center;
+	}
+	.acerca p:nth-child(2){
+		text-align: center;
+	}
+	.redes li{
+		margin: 7%;
+	}
+	.contacto form{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 720px){
+	.cabecera img{
+		width: 200px;
+		height: 200px;
+	}
+	.cabecera h2{
+		font-size: 3em;
+}
+	.cabecera h3{
+		font-size: 1.5em;
+	}
+}
+@media screen and (max-width: 620px){
+	.pie-pagina{
+		flex-direction: column;
+	}
+	.pie-pagina div{
+		width: 90%;
+		margin: auto;
+	}
+	.redes ul{
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+	.redes li{
+		margin: 0;
+	}
+}
+@media screen and (max-width: 500px){
+	.portafolio-imagenes a{
+		width: 80vw;
+		height: 80vw;
+	}
+	.portafolio-imagenes div{
+		width: 80vw;
+		height: 80vw;
+	}
+	.portafolio-imagenes div::before{
+		width: 80vw;
+		height: 80vw;
+	}
+	.portafolio-imagenes a{
+		width: 80vw;
+		height: 80vw;
+	}
+	span{
+		display: none;
+	}
+}
+@media screen and (max-width: 360px){{
 }
